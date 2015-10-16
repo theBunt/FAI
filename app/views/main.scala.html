@@ -1,0 +1,44 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/table.css")">
+		<link href="@routes.Assets.at("stylesheets/FanForm.css")" rel="stylesheet" type="text/css" >
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    </head>
+    <body>
+        <div id="Container">
+		
+		<div id="Underlay"></div>
+	
+		<div id="Logo">
+				<img src="/assets/images/LogonoBack.gif" width="120" height="120" alt="FAI Logo"> 
+				<h1>Republic of Ireland</h1>
+				<h3>International Men's soccer team </h3>
+		</div>
+
+		<div id="Navigation">
+				<ul>
+					<li><a href="@routes.Application.home()" class="home">Home</a></li>
+					<li><a href="@routes.Application.team()" class="team">Team</a></li>
+					<li><a href="@routes.Application.shop()" class="store">Shop</a></li>
+					<li><a href="@routes.Application.fanzone()" class="fanclub">Fan Club</a></li>
+					<li><a href="@routes.Application.contactus()" class="contact">Contact Us</a></li>
+				</ul>
+		</div>
+
+		<div id="Content">
+				@content
+		</div>
+			
+		<div id="Footer">
+			<img src="/assets/images/footer.jpg" height="80px" width="100%"/>
+		</div>	
+			
+	</div>
+    </body>
+</html>

@@ -1,0 +1,387 @@
+p {
+    color: #003A23;
+	font-family: arial;
+	margin: 0;
+	padding: 5px;
+}
+
+p.big {
+	line-height: 200%;
+}
+
+p.profile{
+	padding: 10px;
+}
+
+a{
+	color: #003A23;
+}
+
+a:link
+{
+	text-decoration: underline;
+	font-weight: bold; /* make the text bold */	
+}
+
+a:hover
+{
+	color: green;
+}
+
+.huddle img{ 
+	width:96%; 
+	height:150px; 
+	left:2%; 
+	position:relative; 
+	border:2px solid #ECF3EC;
+}
+
+.teamphoto {
+	border:2px solid #ECF3EC;
+	margin-left: 2.5%;
+}
+
+.box {
+	position: relative; padding: 5px;
+}
+
+h2{
+	font-family: arial;
+	font-size: 1.85em;
+	color: #003A23;
+	margin: 0;
+	text-align: center;
+}
+
+h3 {
+	font-family: arial;
+	font-size: 1.17em;
+	margin: 5px;
+	border: solid 2px #ECF3EC;
+	background-color: #116611;
+	height: 1.2em;
+	text-indent:15px;
+}
+
+h3 .img{
+	float:right;
+}
+
+h4 {
+	font-family: arial;
+	font-size: 1.15em;
+	text-align: center;
+	color: #ECF3EC;
+	margin: 0;
+}
+
+h5 {
+	Color: #ECF3EC;
+	font-family: arial;
+	font-size:0.9em;
+	margin: 2px;
+} 
+
+body {
+	color: #ECF3EC;
+	font-size: 14px;
+	width: 100%;
+	position: absolute;
+	background-image: url('/assets/images/aviva-stadium-green-overlay.jpg');
+	background-size: 100% 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#Underlay {
+    position: absolute;
+    width: 100%;
+	max-width: 800px;
+	height: 100%;
+    background-color: #ECF3EC;
+    top: -25px;
+    opacity: 0.55;
+    margin-top: auto;
+    margin-bottom: auto;
+	z-index: -1;
+}
+
+#Container {
+	color: #ECF3EC;
+	width: 100%;
+	position: relative;
+	max-width: 600px;
+	min-width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto ;
+	margin-bottom: auto;
+	height: 99%;
+}
+
+
+
+#Logo{
+	left: -5%;
+	top:20px;
+	height: 80px;
+	position: relative;
+	border: solid 2px #ECF3EC;
+	background-color: #116611;
+	width: 110%;
+}
+
+#Logo img {
+	position: relative;
+	right: 20px;
+	float: right;
+	top: -20px;
+}
+
+#Logo h1{
+	color: #ECF3EC;
+	font-family: "AR ESSENCE";
+	text-align: center;
+	font-size: 2.1em;
+	top: -15px;
+	position: relative;
+	letter-spacing:2px;
+}
+
+#Logo h3 {
+	border: none;
+	background: none;
+	color: #ECF3EC;
+	position: relative;
+	bottom: 32px; left: 30px;
+	text-align: center;
+	letter-spacing: 1.5px;
+	
+}
+
+#Footer {
+	position: relative;  bottom: 2px; 
+	height: 80px; 
+	width: 700px;
+	margin-left: -50px;
+	clear: both;
+}
+
+#Footer.bottom {
+	position: fixed;
+	bottom: 1px;
+}
+
+#Navigation
+{
+	position: relative;
+	font-size: 0.6em;
+	padding-bottom: 4em;
+	padding-left: 0.5em;
+	padding-top: 1em;
+    margin-bottom: 10px;
+	font-family: arial;
+	left: 120px;
+}
+
+#Navigation ul
+{
+	margin: 0; /* Remove default margins which apply to the ul element*/
+	padding: 0; /* Remove default padding */
+	list-style-type: none; /* Remove the bullet points */
+	width: 100%;
+	text-align: center;
+}
+
+#Navigation li
+{
+	border: solid 2px #ECF3EC; 
+	border-radius: 10px;
+	background-color: #116611;
+	display:block; width: 10%; float: left; /* Display horizontally*/
+	padding: 4px;
+	margin-right: 5px;
+	box-shadow: 3px 3px 2px #050505;	
+}
+
+#Navigation a
+{
+	font-size: 1.2em;
+    text-decoration: none; /* Remove the underline from links */
+	color: white;
+	font-weight: bold; /* make the text bold */	
+}
+
+#Navigation a:focus
+{
+	color: yellow;
+}
+
+#Navigation a:hover, #Home .home, #Team .team, #Store .store, #Fanclub .fanclub, #Contact .contact
+{
+	color: yellow;
+	padding-bottom: 0.1em;
+    background: transparent;
+	
+}
+
+#Navigation a:active , #Home .home, #Team .team, #Store .store, #Fanclub .fanclub, #Contact .contact
+{
+	color: red; /* change colour when hyperlink is clicked */
+}
+
+#player {
+	border: solid 2px #003A23;
+	height: 25%; max-width: 190px; min-width: 120px;
+	background-color: #ECF3EC;
+	border-radius: 5px;
+	float: left;
+	margin: 2px;
+	margin-bottom: 8px; margin-top: 15px;
+	font-size: 0.8em;
+}
+
+#player img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -35px;
+	border: #003A23 2px solid;
+	height: 120px;
+}
+ 
+ #player  h4{
+	color: #003A23;
+	top: -5px; 
+	text-align: center;
+	font-size-adjust: inherit;
+}
+
+#player p{
+	position: relative;
+	padding: 10px;
+	left: 3px;
+	top: -10px;
+}
+ 
+#buy{
+	margin-bottom:20px;
+	border: solid 2px #003A23;
+	height: 25%; max-width: 190px; min-width: 120px;
+	background-color: white;
+}
+
+#buy h4{
+	color:#003A23;
+	}
+
+#buy img{
+	display: block;
+	position:relative;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+ #Selection {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	float: right;
+	border: solid 2px #ECF3EC;
+	background-color: #116611;
+	margin-right: 2.5%;
+}
+
+#Selection a
+{
+	margin: 3px;
+	font-size: 1.2em;
+    text-decoration: none; 
+	color: white;
+	font-weight: bold; /* make the text bold */	
+}
+
+#Selection a:focus
+{
+	color: yellow;
+}
+
+#Selection a:hover
+{
+	color: grey;
+	padding-bottom: 0.1em;
+    background: transparent;
+	
+}
+
+#Selection a:active 
+{
+	color: red; /* change colour when hyperlink is clicked */
+}
+
+#left{
+	position: relative; left: 2.5%; margin-bottom: 20px;
+	width: 40%;
+	min-height: 300px;
+	float: left;
+	border: solid 2px #003A23;
+	background-color: #ECF3EC;
+	}
+#left.newsleft{
+	width: 45%;
+	height: 440px;
+}
+
+#right.newsright{
+	width: 45%;
+	height: 440px;
+}
+	
+.news img{
+	border: #003A23 2px solid;
+	margin: 3px;
+}
+
+.data {
+	margin-left: auto; margin-right: auto;
+	padding:3px;
+	color: #003A23;
+	font-family: arial;
+	width:95%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	background-color: #ECF3EC
+}
+
+#right {
+	position: relative; right: 2.5%;
+	width: 50%;
+	min-height: 300px;
+	float: right;
+	border: solid 2px #003A23;
+	background-color: #ECF3EC;
+	margin-bottom: 20px;
+}
+
+#bottom {
+	position: relative; margin-top: 5%; margin-right: auto; margin-left: auto; margin-bottom: 3%;
+	width: 95%;
+	clear: both;
+	border: solid 2px #003A23;
+	background-color: #ECF3EC;
+}
+
+.member img{
+	display: block;
+	position: relative;
+	width: 80%;
+	height: 100px;
+	border: #003A23 2px solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+
+

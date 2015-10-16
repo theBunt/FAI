@@ -1,0 +1,32 @@
+@(contacts: List[Contact])
+
+@import helper._
+
+@main("fanZone"){
+				
+				<div id="left" >
+					<h3>Fans comments</h3>
+					<table class="CSSTableGenerator">
+
+					@for(contact <- contacts) {
+						<tr>
+						<td><b>@contact.userName :</b><br>@contact.comment 
+						</td>
+						</tr>
+						}
+					</table>
+				</div>
+				
+				<div id ="right">
+						<h3>Join the official fan club!</h3>
+						
+						<a class="member" href="@routes.Application.join()"><p>Sign up HERE!</p>
+						<img src="/assets/images/ireland-huddle.jpg" style ="width:80%; height:100px;" alt="join the Fan club"></a>
+						
+						<a class="member" href="@routes.Application.shop()"><p>Members receive 20% off their first order.</p>
+						<img src="/assets/images/FAI-Slider-11-AwayKit.jpg"  class="membership" style ="width:80%; height:100px;" alt="Visit the shop"></a>
+
+					
+					</div>
+}
+			

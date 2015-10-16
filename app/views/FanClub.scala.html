@@ -1,0 +1,45 @@
+@(contactForm: play.data.Form[Contact])
+@import helper._
+
+
+@main("FanClub"){
+				<h2>Join the Green Army Fanclub</h2>
+				
+				@helper.form(routes.Application.contactSubmit) {
+				
+					<fieldset>	
+						<legend>Sign up here to become an official member of the fan club</legend>
+					<div class="row-form">
+						 @helper.inputText(contactForm("firstName"), '_label -> "First name")
+					</div>
+					
+					<div class="row-form">
+						@helper.inputText(contactForm("lastName"), '_label -> "Last name")
+					</div>
+					
+					<div class="row-form">
+						@helper.inputText(contactForm("userName"), '_label -> "User name")
+					</div>
+					
+					<div class="row-form">
+						@helper.inputText(contactForm("email"), '_label -> "Email")
+					</div>	
+					
+					<div class="row-form">
+						@helper.textarea(contactForm("comment"),'rows -> 3, 'cols -> 30, '_label -> "Message")
+					</div>
+					
+					<div class="row-form form-indent">
+						<input type="submit" value="Send">
+					</div>
+					
+					
+				</fieldset>	
+					</form>
+
+				}	
+				
+				<h4><a href="FanZone.html" >Check out our current members</a></h4>
+						
+			
+		}

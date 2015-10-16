@@ -1,0 +1,125 @@
+form{
+	font-family: arial;
+	padding: 10px;
+	width: 80%;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #003A23;
+}
+
+.row-form
+{
+	clear: left;
+    overflow: hidden;
+    zoom: 1;
+	
+}
+
+label
+{
+	font-family: arial;
+	color: white;
+	display: block; /* labels appear on new line*/
+	margin-bottom: 0.1em;
+	float: left;
+	width: 140px;
+}
+
+.input, .select, .textarea
+{
+	width: 100%; /* Use full width of the element containg the form */
+    *width: 90%; /* Use this for earlier iexplorer versions which don't support box-sizing */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #999999; /* #999 works as a shortcut*/
+    border-radius: 0.3em; /* give borders round corners */
+}
+
+
+.input, .textarea
+{
+    padding: 5px;
+}
+
+
+.textarea
+{
+	height: 150px
+}
+
+.form-list
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	color: #003A23;
+}
+
+.radio
+{
+    margin-left: 1px;
+    margin-right: 0.5em;
+}
+
+.btn
+{
+    display: inline-block; /* display inline but allow margin and border*/
+    margin: 0;
+    padding: 0.7em 1.2em;
+    border: 0;
+    border-radius: 0.3em;
+    color: #ffffff;
+    background-color: #c10000;
+}
+
+.btn:focus
+{
+    background-color: black;
+}
+
+.btn:hover
+{
+    background-color: green;
+}
+
+.btn:active
+{
+    background-color: red;
+}
+
+@media (min-width:33em)
+{
+    .label
+    {
+        color: #003A23;
+		float: left;
+        width: 25%;
+        margin: 0 2% 0 0;
+        text-align: right;
+        --border: 1px solid #FF0000;
+    }
+
+    .input, .select, .textarea
+    {
+        float: left;
+        width: 70%;
+    }
+
+    .form-indent
+    {
+        margin-left: 27%;
+        width: 70%;
+    }
+	
+	.contact-form
+    {
+        max-width: 40em;
+    }
+
+}
+
+
+
+
+

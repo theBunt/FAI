@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.home()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+GET 	/team						controllers.Application.team()
+
+GET 	/contactus						controllers.Application.contactus()
+
+GET 	/home						controllers.Application.home()
+
+GET 	/shop						controllers.Application.shop()
+
+GET 	/player						controllers.Application.player()
+
+GET 	/player/shaygiven					controllers.Application.player()
+
+# Display the form to join the fanclub
+GET     /join                    	controllers.Application.join()
+
+# Handle data when the contact form is submitted - note the request is type POST
+POST    /join                   	controllers.Application.contactSubmit()
+
+GET 	/fanzone					controllers.Application.fanzone()
+
+# showcontacts = list of everyone who submitted the form
+GET 	/showcontacts				controllers.Application.showContacts()

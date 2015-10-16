@@ -1,0 +1,35 @@
+@(contacts: List[Contact])
+
+@import helper._
+
+@main("ContactsList") {
+	<h2>Green Army Members</h2>
+	<!--Table and header row -->
+	<table class="CSSTableGenerator">
+		<thead>
+			<tr>	
+				<th>First name </th>
+				<th>Last name </th>
+				<th>Username </th>
+				<th>Email </th>
+				<th>Comment </th>
+				
+			</tr>
+		</thead>
+		<tbody>
+		<!--for Loop adds a table row for each contact -->
+		@for(contact <- contacts) {
+			<tr> 
+				<td>@contact.firstName</td>
+				<td>@contact.lastName </td>
+				<td>@contact.userName </td>
+				<td>@contact.firstName </td>
+				<td>@contact.comment </td>
+			</tr>
+			} <!--End of the loop -->
+		</tbody>
+	</table>
+	
+	<p><a href="@routes.Application.fanzone()" class="fanclub">View comments left by members</a></p>
+	
+	}
